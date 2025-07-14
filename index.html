@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohit Joshi | Frontend Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        body {
+  opacity: 0;
+  animation: fadeIn 3s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-text">
+                    <span class="logo-name">Rohit Joshi</span>
+                </div>
+            </div>
+            
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="#about" class="nav-link">
+                    <i class="fas fa-user"></i>
+                    <span>About</span>
+                </a>
+                <a href="#skills" class="nav-link">
+                    <i class="fas fa-code"></i>
+                    <span>Skills</span>
+                </a>
+                <a href="#projects" class="nav-link">
+                    <i class="fas fa-project-diagram"></i>
+                    <span>Projects</span>
+                </a>
+                <a href="#experience" class="nav-link">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Experience</span>
+                </a>
+                <a href="#contact" class="nav-link">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact</span>
+                </a>
+            </div>
+            
+            <div class="nav-toggle">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="home">
+        <div class="hero-bg">
+            <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1537498425277-c283d32ef9db?q=80&w=2956&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"></div>
+            <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1562813733-b31f71025d54?q=80&w=2938&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"></div>
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <div class="floating-cv" id="floatingCV">
+            <div class="cv-icon">
+                <i class="fas fa-file-pdf"></i>
+                <div class="cv-pulse"></div>
+            </div>
+            <div class="cv-tooltip">Click to view CV</div>
+            <div class="cv-expanded">
+                <div class="cv-header">
+                    <i class="fas fa-file-pdf"></i>
+                    <span>Resume</span>
+                </div>
+                <div class="cv-actions">
+                    <a href="ROHIT JOSHI.pdf" target="_blank" class="cv-action view">
+                        <i class="fas fa-eye"></i>
+                        <span>View CV</span>
+                    </a>
+                    <a href="ROHIT JOSHI.pdf" download="Rohit_Joshi_CV.pdf" class="cv-action download">
+                        <i class="fas fa-download"></i>
+                        <span>Download</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="glitch-container" data-aos="fade-up">
+                <h1 class="glitch-text" data-text="Rohit Joshi">Rohit Joshi</h1>
+                <div id="typed-strings">
+                    <span>BSc Computing Student</span>
+                    <span>Frontend Developer</span>
+                    <span>UI/UX Designer</span>
+                </div>
+                <span id="typed" class="typed"></span>
+            </div>
+            
+            <div class="hero-stats" data-aos="fade-up" data-aos-delay="300">
+                <div class="stat-item">
+                    <span class="stat-number">4</span>
+                    <span class="stat-label">AWS Certifications</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">7+</span>
+                    <span class="stat-label">Projects Completed</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">3+</span>
+                    <span class="stat-label">Years Learning</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="section-bg"></div>
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">About Me</h2>
+            <div class="about-content">
+                <div class="about-img" data-aos="fade-right" data-aos-delay="200">
+                    <div class="img-frame">
+                        <img src="profilepicc.jpg" alt="Rohit Joshi" id="profile-pic">
+                        <div class="img-overlay"></div>
+                    </div>
+                </div>
+                <div class="about-text" data-aos="fade-left" data-aos-delay="400">
+                    <p>Hi, I'm Rohit Joshi, a BSc Computing student at Islington College with expertise in Java, Python, SQL, and web technologies. I'm AWS certified in Cloud Foundations, Data Engineering, and Machine Learning, passionate about developing practical, user-centered solutions focused on efficiency, scalability, and innovation.</p>
+                    
+                    <div class="education">
+                        <h3>Education</h3>
+                        <div class="edu-item" data-aos="fade-left" data-aos-delay="600">
+                            <h4>BSc.Hons Computing</h4>
+                            <p>Islington College, Kamalpokhari | 2023 - Present</p>
+                            <span class="graduation">Expected Graduation: 2026</span>
+                        </div>
+                    </div>
+
+                    <div class="certifications">
+                        <h3>AWS Certifications</h3>
+                        <div class="cert-grid" data-aos="fade-left" data-aos-delay="800">
+                            <div class="cert-item">
+                                <i class="fab fa-aws"></i>
+                                <span>Cloud Foundation</span>
+                            </div>
+                            <div class="cert-item">
+                                <i class="fab fa-aws"></i>
+                                <span>Data Engineering</span>
+                            </div>
+                            <div class="cert-item">
+                                <i class="fab fa-aws"></i>
+                                <span>Machine Learning Foundation</span>
+                            </div>
+                            <div class="cert-item">
+                                <i class="fab fa-aws"></i>
+                                <span>ML for NLP</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="section-bg"></div>
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category" data-aos="fade-up">
+                    <h3>Frontend Technologies</h3>
+                    <div class="skill-grid">
+                        <div class="skill-item" data-aos="zoom-in" data-aos-delay="100">
+                            <i class="devicon-react-original colored"></i>
+                            <span>React.js</span>
+                        </div>
+                        <div class="skill-item" data-aos="zoom-in" data-aos-delay="200">
+                            <i class="devicon-react-original colored"></i>
+                            <span>React Native</span>
+                        </div>
+                        <div class="skill-item" data-aos="zoom-in" data-aos-delay="300">
+                            <i class="devicon-typescript-plain colored"></i>
+                            <span>TypeScript</span>
+                        </div>
+                        <div class="skill-item" data-aos="zoom-in" data-aos-delay="400">
+                            <i class="devicon-javascript-plain colored"></i>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-grid">
+                        <div class="skill-item" data-aos="zoom-in" data-aos-delay="100">
+                            <i class="devicon-python-plain colored"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item" data-aos="zoom-in" data-aos-delay="200">
+                            <i class="devicon-java-plain colored"></i>
+                            <span>Java</span>
+                        </div>
+                        <div class="skill-item" data-aos="zoom-in" data-aos-delay="300">
+                            <i class="devicon-mongodb-plain colored"></i>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="skill-item" data-aos="zoom-in" data-aos-delay="400">
+                            <i class="devicon-mysql-plain colored"></i>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
+                    <h3>Tools & Design</h3>
+                    <div class="skill-grid">
+                        <div class="skill-item" data-aos="zoom-in" data-aos-delay="100">
+                            <i class="devicon-figma-plain colored"></i>
+                            <span>Figma</span>
+                        </div>
+                        <div class="skill-item" data-aos="zoom-in" data-aos-delay="200">
+                            <i class="devicon-github-original"></i>
+                            <span>GitHub</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="section-bg"></div>
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Projects</h2>
+            
+            <!-- Non-Academic Projects Section -->
+            <div class="projects-section" data-aos="fade-up" data-aos-delay="200">
+                <h3 class="projects-subtitle">Non-Academic Projects</h3>
+                <div class="non-academic-projects">
+                    <div class="project-card featured" data-aos="fade-up" data-aos-delay="300">
+                        <div class="project-header">
+                            <img src="studdybuddy.png" alt="StudyBuddy" loading="lazy">
+                            <div class="project-badge">Frontend</div>
+                        </div>
+                        <div class="project-info">
+                            <h3>StudyBuddy</h3>
+                            <div class="tech-stack">React.js, TypeScript</div>
+                            <div class="description">
+                                Developed a student-focused frontend platform that enables peer-to-peer collaboration and interest-based matching to connect learners with compatible study partners.
+                            </div>
+                            <ul class="project-features">
+                                <li>Goal tracking and workspace management</li>
+                                <li>AI assistant integration</li>
+                                <li>Clean interface for enhanced productivity</li>
+                                <li>Peer-to-peer collaboration features</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Project Link</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card featured" data-aos="fade-up" data-aos-delay="400">
+                        <div class="project-header">
+                            <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Bazaaro" loading="lazy">
+                            <div class="project-badge">Mobile</div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Bazaaro</h3>
+                            <div class="tech-stack">React Native, TypeScript</div>
+                            <div class="description">
+                                Built a frontend mobile app interface for a platform that connects users with local stores offering the exact items they need, using location-aware search.
+                            </div>
+                            <ul class="project-features">
+                                <li>Real-time offer comparison</li>
+                                <li>Store directions and navigation</li>
+                                <li>Seamless UI for browsing and discovery</li>
+                                <li>Location-aware search functionality</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Project Link</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Academic Projects Section -->
+            <div class="projects-section" data-aos="fade-up" data-aos-delay="500">
+                <h3 class="projects-subtitle">Academic Projects</h3>
+                <div class="project-filters" data-aos="fade-up" data-aos-delay="600">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="web">Web Development</button>
+                    <button class="filter-btn" data-filter="desktop">Desktop Apps</button>
+                    <button class="filter-btn" data-filter="database">Database</button>
+                    <button class="filter-btn" data-filter="iot">IoT</button>
+                </div>
+                <div class="projects-grid">
+                    <!-- Academic project cards will be added dynamically via JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+        <div class="section-bg"></div>
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Academic Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-right" data-aos-delay="200">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>BSc (Hons) Computing</h3>
+                        <h4>Islington College</h4>
+                        <h5>London Metropolitan University</h5>
+                        <span class="timeline-date">2023 - Present</span>
+                        <p>Currently pursuing Bachelor's degree in Computing with focus on software development, data science, and cloud technologies.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-left" data-aos-delay="400">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>+2 Level, Computer Science</h3>
+                        <h4>Radiant Sec. School</h4>
+                        <span class="timeline-date">2021 - 2023</span>
+                        <p>Completed higher secondary education with specialization in Computer Science, building foundation in programming and mathematics.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-right" data-aos-delay="600">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Secondary Education Exam (SEE)</h3>
+                        <h4>Sunrise Public Sec. School</h4>
+                        <span class="timeline-date">2021</span>
+                        <p>Completed secondary education with strong academic performance, laying the groundwork for future studies in technology.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="section-bg"></div>
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Contact Me</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item email-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <span class="contact-label">Email Me</span>
+                            <span class="contact-value">itsrohit904@gmail.com</span>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item location-item" data-aos="fade-up" data-aos-delay="150">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <span class="contact-label">Location</span>
+                            <span class="contact-value">Lalitpur, Hattiban</span>
+                        </div>
+                    </div>
+                    
+                    <a href="https://github.com/rohitjoshi333" target="_blank" class="contact-item social-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-details">
+                            <span class="contact-label">GitHub</span>
+                            <span class="contact-value">View Profile</span>
+                        </div>
+                    </a>
+                    
+                    <a href="https://www.linkedin.com/in/rohit-joshi-b33476289/" target="_blank" class="contact-item social-item" data-aos="fade-up" data-aos-delay="250">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <span class="contact-label">LinkedIn</span>
+                            <span class="contact-value">Connect</span>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="contact-form-section" data-aos="fade-up" data-aos-delay="300">
+                    <div class="form-header">
+                        <h3>Send Message</h3>
+                        <p>Let's discuss your project or just say hello!</p>
+                    </div>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" required>
+                                <label for="name">Your Name</label>
+                                <div class="form-line"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" required>
+                                <label for="email">Your Email</label>
+                                <div class="form-line"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" required>
+                            <label for="subject">Subject</label>
+                            <div class="form-line"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <label for="message">Your Message</label>
+                            <div class="form-line"></div>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <span class="btn-text">Send Message</span>
+                            <i class="fas fa-paper-plane btn-icon"></i>
+                            <div class="btn-ripple"></div>
+                        </button>
+                    </form>
+                    
+                    <div class="form-success" id="formSuccess">
+                        <div class="success-animation">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h3>Message Sent Successfully!</h3>
+                        <p>Thank you for reaching out. I'll get back to you soon.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <div class="logo-text">
+                            <span class="logo-name">Rohit Joshi</span>
+                            <span class="logo-subtitle">Developer & Student</span>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        BSc Computing student passionate about creating innovative solutions through code and design.
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="mailto:itsrohit904@gmail.com">Email</a></li>
+                            <li><a href="https://github.com/rohitjoshi333" target="_blank">GitHub</a></li>
+                            <li><a href="https://www.linkedin.com/in/rohit-joshi-b33476289/" target="_blank">LinkedIn</a></li>
+                            <li><a href="/ROHIT JOSHI.pdf" target="_blank">Resume</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-divider"></div>
+                <div class="footer-bottom-content" style="justify-content: center;">
+                    <p>&copy; 2024 Rohit Joshi. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="back-to-top" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+        <div class="back-to-top-bg"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
